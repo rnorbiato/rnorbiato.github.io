@@ -1,219 +1,67 @@
 <!DOCTYPE html>
-<html>
- 
+<html lang="en">
 <head>
-
- <!--CSS Header-->
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
- 
-<style type = text/css>
- 
-body {width: 70%;
-    background-color: white;
-    margin: auto;}
- 
-nav {border-bottom: 1px solid    #196f3d;
-}
- 
-ul.tight {margin-top: 4px;
-        padding-left: 54px;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+    <style>
+        /* Add your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
         }
- 
-nav ul, footer ul {
-    font-family:'Courier Prime';
-    padding: 0px;
-    list-style: none;
-    font-weight: normal;
-    color: black;
-    margin: 4px;
-}
- 
-nav ul li, footer ul li {
-    display: inline;
-    margin-right: clamp(15px,10%,80px);
-}
- 
-nav ul li a {
-    font-weight: 500;
-    font-size: large;
-    font-family: 'Courier Prime';
-    text-decoration: none;
-}
- 
-footer ul {
-    float: right;
-}
- 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
- 
-a {
-    text-decoration: none;
-    color:   #0b5345;
-    font-weight: heavy;
-}
- 
-a:hover {
-    text-decoration: underline;
-}
- 
-h1 {
-    font-size: 2.5em;
-    font-family: 'Inconsolata';
-    font-variant: titling-caps;
-    text-align: center;
-    font-weight: 200;
-}
- 
-h2 {
-    font-size: 1.75em;
-    font-family:'Inconsolata';
-    font-weight: 500;
-    margin-bottom: 0px;
-        text-align: center;
-}
- 
-p {
-    font-size: 1em;
-    line-height: 1.2em;
-    font-family:'Inconsolata';
-    font-weight: normal;
-    color: black;
-}
- 
-footer {
-        margin-top: 10px;
-    margin-bottom: 10px;
-    border-top: 2px solid #196f3d;
-    font-size: .8em;
-}
- 
-ul {
-    line-height: 1.2em;
-    font-family: 'Courier Prime';
-    }
- 
-ul li {
-        padding-bottom: .2em;
-        font-family: 'Courier Prime';
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
         }
- 
-p.tight {
-        padding-left: 36px;
-    text-indent: -36px;
-        margin-bottom: 4px;
-    }
- 
-img.myface {
-    width: 70%;
-    height:auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    }
- 
-.collapsible {
-  color: black;
-  background-color: white;
-  cursor: pointer;
-  margin: 0px;
-  border: none;
-  text-align: left;
-  display: inline-block;
-  outline: none;
-  font-family: 'Courier Prime';
+        nav {
+            background-color: #444;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
         }
-.collapsible:after {
-        font-size: 1.2em;
-        content:' \25BC';
-    }
-.active, .collapsible:hover {
-  background-color: white;
-  color:  #196f3d;
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
         }
-.content {
-  padding: 0px;
-  display: none;
-  overflow: hidden;
-  background-color: white;
-}
-@media (min-width:600px) {
-div.lcolumn {
-    float: left;
-    width: 40%;
-}      
-div.rcolumn {
-    float: right;
-    width: 60%;
-    vertical-align: center;
+        .content {
+            padding: 20px;
         }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
         }
-@media (max-width:600px) {
-div.lcolumn {
-        width: 100%;
-        margin: auto ;
-        float: none;
-}
-div.rcolumn {
-        width: 100%;
-        margin: auto;
-        float: none;
-}
-}
-</style>
- <link rel="preconnect" href="https://fonts.googleapis.com">
- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
- <link href='https://fonts.googleapis.com/css?family=Courier Prime' rel='stylesheet'>
- <link href='https://fonts.googleapis.com/css?family=Courier Prime' rel='stylesheet'>
- <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
- <link href='//fonts.googleapis.com/css?family=Roboto:400,400italic,700' rel='stylesheet' type='text/css'>
-
- 
- 
- <link rel="stylesheet"
-  href="https://fonts.googleapis.com/css?family=Noto+Sans:wght@200..900">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-<title>Riccardo Norbiato</title>
- 
+    </style>
 </head>
- 
 <body>
- 
- <h1> Riccardo Norbiato </h1>
- 
- <nav>
- <ul>
-  <li><a href="/">Home</a></li>
-  <li><a href="/research">Research</a></li>
-  <li><a href="/curriculum.html">Bio</a></li>
-</ul>
-</nav>
- 
-<div class="container">
- <div class="row">
-  <div class ="lcolumn">
-   <img class="myface" src="Photo2.jpeg" alt="Chiara Belletti">
-  </div>
-  <div class="rcolumn">
-   <p> I am PhD student at <a href="https://crest.science/" target="_blank" rel="noopener noreferrer">CREST/Ecole polytechnique</a> (<a href="https://www.ip-paris.fr/" target="_blank" rel="noopener noreferrer">IP Paris</a>), supervised by <a href="https://crest.science/user/gregory-corcos/" target="_blank" rel="noopener noreferrer">Gregory Corcos</a>. </p>
-   <p> Research Interests: International Trade, Environmental economics:</p>
-   <p> Email: <a href="mailto:riccardo.norbiato@ensae.fr">riccardo.norbiato@ensae.fr</a>
-   <p> Social: <a href="https://twitter.com/RiccardoNorb" target="_blank" rel="noopener noreferrer">[Twitter]</a> <span>&#183;</span></p>
- 
-</div>
-</div>                        
-</div>
-
-<footer>
-   
-</footer>
- 
+    <header>
+        <h1>Your Name</h1>
+        <p>Web Developer</p>
+    </header>
+    <nav>
+        <a href="#">Home</a> |
+        <a href="#">About</a> |
+        <a href="#">Portfolio</a> |
+        <a href="#">Contact</a>
+    </nav>
+    <div class="container">
+        <div class="content">
+            <h2>About Me</h2>
+            <p>This is where you can write a brief introduction about yourself.</p>
+        </div>
+        <div class="content">
+            <h2>Portfolio</h2>
+            <p>Here, you can showcase your work or projects with images and descriptions.</p>
+        </div>
+    </div>
+    <footer>
+        &copy; 2023 Your Name
+    </footer>
 </body>
-
-</html> 
+</html>
