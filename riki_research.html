@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Research / Riccardo Norbiato</title>
+    <meta name="description" content="PhD Student">
+    <link rel="stylesheet" href="cv_riki.css">
+  <style>
+    article div {
+      width: 150px;
+      height: 100px;
+      transition: width 1.4s, height 1.6s;
+
+    }
+    article div:hover {
+      width: 90%;
+      height: 250px;
+      background: #a8d396;
+      margin-left: 10px;
+    }
+    .description {
+        display: none;
+    }
+    article div:hover + .description {
+      display: block;
+
+    }
+  </style>
+</head>
+<body>
+<main>
+    <h3>Riccardo Norbiato</h3>
+        <span class="mini-note">Contacts:
+        </span>
+  <nav>
+      <input class="menu-btn" type="checkbox" id="menu-btn">
+      <p>
+        <label class="menu-icon" for="menu-btn">Menu</label>
+      </p>
+      <ul class="site-nav">
+        <li>
+          <a href="riki_home.html">Home</a>
+        </li>
+        <li>
+          <a href="riki_about.html">About</a>
+        </li>
+        <li>
+          <a href="riki_research.html">Research</a>
+        </li>
+      </ul>
+        <article>
+          <h1>Research</h1>
+          <h2>Publications</h2>
+          <div style="padding-left: 5px">
+            <h3>First</h3>
+                <span class="description">
+                descrizione del lavoro
+            </span>
+          </div>
+
+          <div style="padding-left: 5px">
+            <h3>Second</h3>
+            <span class="description">
+                descrizione del lavoro
+            </span>
+          </div>
+        </article>
+    </nav>
+
+  </main>
+  <div class="bottom">
+    <span class="mini-note"></span>
+  </div>
+
+</body>
+</html>
